@@ -1,15 +1,21 @@
-import Button from '@mui/material/Button';
+import { FC } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
+import Home from './components/Home';
+import Dashboard from './components/Dashboard';
+import LoginPage from './components/LoginPage';
 
-function App() {
+
+const App: FC = () => {
   return (
-    <div>
-      <h1>Budget Tracker</h1>
-      <Button variant="contained" color="primary">
-        Get Started
-      </Button>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App
+export default App;
