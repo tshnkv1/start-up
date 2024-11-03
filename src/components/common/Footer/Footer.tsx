@@ -17,11 +17,9 @@ const Footer: React.FC = () => {
         backgroundColor: theme.palette.background.default,
       }}
     >
-      {/* <Container maxWidth="lg"> */}
       <Typography variant="body1" sx={{ color: theme.palette.primary.main }}>
         © 2024 SStart
       </Typography>
-      {/* </Container>. */}
     </Box>
   );
 };

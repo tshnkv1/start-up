@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import {
   Box,
   Container,
@@ -12,7 +13,6 @@ import {
 import { Routes } from '../../routes/routes';
 import { CustomButton } from '../../components';
 import { FormValues } from './types';
-import { SubmitHandler, useForm } from 'react-hook-form';
 
 const LoginPage: React.FC = () => {
   const theme = useTheme();

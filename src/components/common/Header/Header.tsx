@@ -13,10 +13,10 @@ import {
 } from '@mui/material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
-import { Routes } from '../../routes/routes';
-import { company } from '../../constants/index';
-import { toggleTheme } from '../../store/reducers/themeSlice';
-import { ThemeToggle } from '../index';
+import { Routes } from '../../../routes/routes';
+import { company } from '../../../constants/index';
+import { ThemeToggle } from '../../app/index';
+import { toggleTheme } from '../../../store/slices/themeSlice';
 
 const Header: React.FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
           <Button
             color="inherit"
             component={Link}
-            to={Routes.ABOUT_DEVELOPER}
+            to={Routes.ABOUT}
             sx={{ color: theme.palette.primary.main }}
           >
             About Developer

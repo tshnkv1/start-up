@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
-import themeReducer from './reducers/themeSlice';
+import { authSlice, themeSlice } from './slices';
 
 const store = configureStore({
   reducer: {
-    theme: themeReducer,
+    auth: authSlice,
+    theme: themeSlice,
   },
 });
 

@@ -3,5 +3,9 @@ export const Routes = {
   LOGIN: '/login',
   REGISTER: '/register',
   RESET_PASSWORD: '/reset-password',
-  ABOUT_DEVELOPER: '/about-developer',
+  ABOUT: '/about',
+};
+
+export const PrivateRoutes = {
+  DASHBOARD: '/dashboard',
 };
