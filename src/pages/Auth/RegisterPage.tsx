@@ -88,7 +88,7 @@ const RegisterPage: React.FC = () => {
               type="password"
               fullWidth
               margin="normal"
-              {...register('password', { required: 'Введите пароль' })}
+              {...register('password', { required: 'Enter your password' })}
               error={!!errors.password}
               helperText={errors.password?.message}
             />
