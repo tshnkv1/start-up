@@ -1,0 +1,36 @@
+/* Сброс стилей для всех тегов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 6vh; /* Высота вашего Header */
+}
+
+/* Общий сброс для текстовых элементов */
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+/* Сброс для ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Сброс для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Сброс для таблиц */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Добавьте дополнительные сбросы по необходимости */

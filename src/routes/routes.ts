@@ -5,3 +5,7 @@ export const Routes = {
   RESET_PASSWORD: '/reset-password',
   ABOUT: '/about',
 };
+
+export const PrivateRoutes = {
+  DASHBOARD: '/dashboard',
+};

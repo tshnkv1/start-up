@@ -1,2 +1,3 @@
-export { default as HomePage } from './HomePage';
-export { LoginPage, RegisterPage, ResetPasswordPage } from './Auth';
+export { LoginPage, RegisterPage, ResetPasswordPage } from './auth';
+export { AboutPage, HomePage } from './common';
+export { DashboardPage } from './users';
