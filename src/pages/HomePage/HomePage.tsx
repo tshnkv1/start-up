@@ -1,21 +1,27 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useTheme } from '@mui/material';
 
 const HomePage: React.FC = () => {
+  const theme = useTheme();
+
   return (
     <Box
       sx={{
-        height: '100vh',
+        height: '83vh',
+        backgroundColor: theme.palette.background.paper,
+        color: theme.palette.primary.main,
+        padding: '20px',
+        borderRadius: '8px',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundImage: 'url(https://source.unsplash.com/random)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        textAlign: 'center',
       }}
     >
-      <Typography variant="h2" color="white">
-        Welcome to SStart
+      <Typography variant="h2">Welcome to SStart</Typography>
+      <Typography variant="h6" pt={'20px'} gutterBottom>
+        Optimize your time easily
       </Typography>
     </Box>
   );

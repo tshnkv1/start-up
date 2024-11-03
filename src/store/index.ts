@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
+import themeReducer from './reducers/themeSlice';
 
 const store = configureStore({
   reducer: {
-    // reducers
+    theme: themeReducer,
   },
 });
 

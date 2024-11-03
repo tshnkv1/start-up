@@ -3,5 +3,5 @@ export const Routes = {
   LOGIN: '/login',
   REGISTER: '/register',
   RESET_PASSWORD: '/reset-password',
-  ABOUT: '/about',
+  ABOUT_DEVELOPER: '/about-developer',
 };
