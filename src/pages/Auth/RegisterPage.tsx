@@ -92,7 +92,7 @@ const RegisterPage: React.FC = () => {
               error={!!errors.password}
               helperText={errors.password?.message}
             />
-            <CustomButton type="submit" style={{ marginTop: '16px' }}>
+            <CustomButton disabled type="submit" style={{ marginTop: '16px' }}>
               Sign Up
             </CustomButton>
           </form>
